@@ -1,0 +1,6 @@
+RewriteEngine On    # Turn on the rewriting engine
+RewriteRule ^list$ read.php [NC,L]
+RewriteRule ^list/([0-9_-]*)$ single_read.php?id=$1 [NC,L]
+RewriteRule ^add$ create.php [NC,L]
+RewriteRule ^update$ update.php [NC,L]
+RewriteRule ^delete$ delete.php [NC,L]
